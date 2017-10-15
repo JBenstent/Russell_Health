@@ -5,4 +5,4 @@ def index(request):
 
     response = "Hello, I am your first request!"
 
-    return render(request, "Amniotic_App/landing.html")
+    return render(request, "Amniotic_App/index.html")

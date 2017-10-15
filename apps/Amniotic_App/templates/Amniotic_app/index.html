@@ -7,71 +7,115 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Jonathan Benstent">
+    <link rel="icon" type="image/x-icon" href="http://www.google.com/s2/favicons?domain=www.russellhealth.com" />
 
     <title>AMIO</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="/static/css/creative.css/creative.min.css" media="screen" title="no title"  charset="utf-8">
-    <link rel="stylesheet" href="/static/img/portfolio/fullsize" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/static/img/portfolio/thumbnails" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/static/js/creative.js/creative.min.js" media="screen" title="no title"  charset="utf-8">
-    <link rel="stylesheet" href="/static/less/creative.less" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/static/less/mixins.less" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/static/less/variables.less" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/static/less/variables.less" media="screen" title="no title" charset="utf-8">
-
-
-
+    {% load static %}
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <!-- Custom fonts for this template -->
-    <link href="../../static/Amniotic_app/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="static/Amniotic_app/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="../../static/Amniotic_app/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="static/Amniotic_app/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../../static/Amniotic_app/css/creative.min.css" rel="stylesheet">
+    <link href="static/Amniotic_app/css/creative.min.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
     <style>
     .navbar-toggler {
         z-index: 1;
+        /*background-color: black;*/
     }
+
+
+
+    #homeHeading {
+      /*background-image: url("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAKLAAAAJGNkYmM5YWU2LTk3ZWQtNDY0Ni1iNzM4LWUyZGU2Mjk1ZWI4NA.jpg");*/
+      /*color: #D3D3D3;*/
+      color: black;
+      font-style: oblique;
+      font-size: 40px;
+      margin-top: 100px;
+    }
+
+    #description {
+
+      color: black;
+      font-weight: 300;
+      background-color: white;
+      font-size: 20px;
+      opacity: .8;
+      border-radius: 15px;
+      margin-top: -25px;
+    }
+    header.masthead {
+      /*background-image: url("https://www.noraetlabora.com/wp/wp-content/uploads/2017/04/growing.jpg");*/
+      background-color: white;
+      font-weight: bolder;
+      font: black;
+    }
+
+    .nav-link {
+      font-size: 18px;
+      background-color: #f6f6f6;
+      border-radius: 10px;
+      margin-left: 10px;
+      padding: 3px;
+    }
+
+   /*.header-content-inner {
+     font-size: 12px;
+   }*/
+
+    body {
+      font: "Gill Sans";
+    }
+
+
 
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
         }
     }
+
+    .russellhealthimg {
+      /*background-color: white;*/
+      width: 106px;
+      length: 177px;
+    }
+
     </style>
 
 </head>
 
 <body id="page-top">
 
+
     <!-- Navigation -->
+      <img src="https://www.freelogoservices.com/api/main/images/1j+ojl1FOMkX9WypfBe43D6kjfSArBBKkRvEwXs1M3EMoAJtlSApjvZr...fQ+" alt="" style="margin: auto;"  style="background-color:white;">
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#services">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -84,24 +128,28 @@
         </div>
     </nav>
 
-    <header class="masthead">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
-                <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
-            </div>
+
+
+     <header class="masthead">
+       <div class="background">
+          <div class="header-content">
+              <div class="header-content-inner">
+                  <h3 id="homeHeading">Delivering powerful innovations in Stem Cell Recruitment Therapy</h3>
+                  <hr>
+                  <p id="description">Russell Health<b style="font-size:10px;">®</b> is the global premier marketer and distributor of human amniotic tissue. Russell Health® and its partners have distributed amniotic tissue grafts nationwide and achieved profound clinical outcomes in multiple therapeutic areas including wound care, dental, podiatry, orthopedic surgery, sports medicine, and urology.  With this groundbreaking human amniotic tissue offering that promotes bioactive healing, Russell Health® believes its unmatched knowledge and superior processing of amniotic tissue strategically positions us to become the leader in regenerative medicine.</p>
+                  <a class="btn btn-primary btn-xl" href="#about">Discover More</a>
+              </div>
+          </div>
         </div>
-    </header>
+      </header>
 
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-heading text-white">We've got what you need!</h2>
+                    <h2 class="section-heading text-white">Our Product Line</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <p class="text-faded">Discover more about the PalinGen Membrane and Amniotic Fluid.</p>
                     <a class="btn btn-default btn-xl sr-button" href="#services">Get Started!</a>
                 </div>
             </div>
@@ -112,133 +160,119 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">Our Product Line</h2>
                     <hr class="primary">
                 </div>
             </div>
-        </div>
+          </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                  <div class="service-box">
+                        <i class="fa fa-medkit fa-4x text-primary sr-icons" aria-hidden="true"></i>
+                        <h3>PalinGen Membrane (Dry) & PalinGen Hydromembrane (Wet)</h3>
+                        <p class="text-muted">PalinGen® Membrane and Hydromembrane are powerful human allografts providing wound protection and promoting healing by naturally absorbing into the wound (around 1-2 weeks). The PalinGen® Hydromembrane is a wet form of a PalinGen Membrane, allowing the membrane to adhere to wounds located in dryer areas of the body. PalinGen allografts are chorion free and contain a number of invaluable elements that promote tissue repair such as collagen substrates, growth factors, cytokines, and extracellular matrix. These tissues have anti-bacterial, anti-inflammatory, anti-adhesive, and anti-fibrotic properties. Further, they can be stored at room temperature for up to 2 years. </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <i class="fa fa-spinner fa-spin fa-4x fa-fw text-primary sr-icons"></i>
+                        <h3>XPlus Membrane (Dry) & XPlus Hydromembrane (Wet)</h3>
+
+                        <p class="text-muted">PalinGen® Membrane and Hydromembrane are powerful human allografts providing wound protection and promoting healing
+                          by naturally absorbing into the wound (around 1-2 weeks). Developed using a proprietary process,the PalinGen® Hydromembrane is a wet form of a PalinGen Membrane, allowing the membrane
+                          to adhere to wounds located in dryer areas of the body. PalinGen allografts are chorion free and contain a number of
+                          invaluable elements that promote tissue repair:
+                        </p>
+                        <br>
+<ul class="text-muted">
+  <li>Collagen Substrates</li>
+  <li>Growth Factors</li>
+  <li>Extracellular Matrix</li>
+  <li>2 year Shelf Life</li>
+</ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <i class="fa fa-usd fa-4x text-primary sr-icons" aria-hidden="true"></i>
+                        <h3>PalinGen Membrane Reimbursement</h3>
+                        <p class="text-muted">The Centers for Medicare and Medicaid Services (CMS) established code Q4173 for the PalinGen®Membrane and XPlus Membrane family of products, per square centimeter. Each of our membranes are competitively priced to allow you to receive a gross profit for each reimbursement. Download the Reimbursement Guide for more information.</p>
+                        <br>
+                        <a class="btn btn-primary" href="static/Amniotic_app/vendor/amniotic_info/palingen/PalinGen_Membrane_Patient_Brochure.pdf" download>Membrane Information</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <i class="fa fa-4x fa-hospital-o text-primary sr-icons"></i>
+                        <h3>Stem Cell Recruiment Therapy (Amniotic Fluid Injections)</h3>
+                        <p class="text-muted">Amniotic Fluid Injections is a powerful treatment, helping the body boost its ability to heal itself, by
+                          recruiting the body’s stem cells to repair and regenerate damaged tissue. It is administered through a single injection
+                          of Human Amniotic Fluid, AF. Developed using a proprietary process, our Amniotic Fluid Injections are convenient and
+                          versatile liquid allografts that are derived from donated human placental
+                          amniotic fluid. These safe, drug-free injections contain growth factors
+                          and other naturally occurring nutrients which encourage cellular and soft tissue regeneration and reconstruction.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+<!-- Clicking on item brings up description -->
+
+    <!-- PRODUCT REIMBURSEMENT INFORMATION CENTERED -->
+
+    <!-- have the brochures under the product description -->
+
+    <!-- keep russell health at top left of the page -->
+
+    <div class="col-lg-12 col-sm-16 text-center">
+      <h2></h2>
+    </div>
 
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
+            <div class="row no-gutter popup-gallery" style="margin-bottom: 0px;">
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/1.jpg">
-                        <img class="img-fluid" src="/static/img/portfolio/thumbnails/1.jpg" alt="IMAGE LOCATION">
+                    <a class="portfolio-box" href="static/Amniotic_app/img/portfolio/fullsize/7.jpg">
+                        <img class="img-fluid" src="static/Amniotic_app/img/portfolio/thumbnails/7.jpg" alt="IMAGE LOCATION">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Naperville Surgery Center
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    PalinGen Membrane (Dry)
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/2.jpg">
-                        <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/2.jpg" alt="">
+                    <a class="portfolio-box" href="static/Amniotic_app/img/portfolio/fullsize/8.jpg">
+                        <img class="img-fluid" src="static/Amniotic_app/img/portfolio/thumbnails/8.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    LaGrange Wound Care Center
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    PalinGen Hydromembrane
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/3.jpg">
-                        <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/3.jpg" alt="">
+                    <a class="portfolio-box" href="static/Amniotic_app/img/portfolio/fullsize/9.jpg">
+                        <img class="img-fluid" src="static/Amniotic_app/img/portfolio/thumbnails/9.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Hinsdale Surgery Center
                                 </div>
                                 <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/4.jpg">
-                        <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/4.jpg" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/5.jpg">
-                        <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/5.jpg" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/6.jpg">
-                        <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/6.jpg" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
+                                    XPlus Hydromembrane
                                 </div>
                             </div>
                         </div>
@@ -248,47 +282,61 @@
         </div>
     </section>
 
+
+
+
+
     <div class="call-to-action bg-dark">
-        <div class="container text-center">
-            <h2>Free Download at Start Bootstrap!</h2>
-            <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <div class="container text-center" style="padding-bottom: 5px; padding-top: 3px;">
+            <h2>Download Our Brochures Below!</h2>
+            <a class="btn btn-default btn-xl sr-button" href="static/Amniotic_app/vendor/amniotic_info/palingen/PalinGen_Membrane_Patient_Brochure.pdf" download>Membrane Information</a>
+            <a class="btn btn-default btn-xl sr-button" href="static/Amniotic_app/vendor/amniotic_info/palingen/Stem_Cell_Recruitment_Therapy_Brochure.pdf" download>Stem Cell Therapy</a>
+            <a class="btn btn-default btn-xl sr-button" href="static/Amniotic_app/vendor/amniotic_info/palingen/PalinGen_Membrane_Reimbursement.pdf" download>Reimbursement Guide</a>
+
+
+            <!-- src="static/Amniotic_app/amniotic_info/palingen/PalinGen_Membrane_Patient_Brochure.pdf" -->
         </div>
     </div>
 
-    <section id="contact">
+
+
+
+    <section id="contact" style="padding-top: 100px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Contact Information</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>For information about our products or if you'd like to make an order please contact us!</p>
                 </div>
                 <div class="col-lg-4 offset-lg-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
+                    <p>(630) 297-3377</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:sales@russellhealth.com">sales@russellhealth.com</a></p>
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!-- Bootstrap core JavaScript -->
-    <script src="../../static/Amniotic_app/vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="../../static/Amniotic_app/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/Amniotic_app/vendor/jquery/jquery.min.js"></script>
+    <script src="static/Amniotic_app/vendor/tether/tether.min.js"></script>
+    <script src="static/Amniotic_app/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <link rel="stylesheet" href="/static/css/creative.css/creative.min.css" media="screen" title="no title"  charset="utf-8">
+    <link rel="stylesheet" href="static/Amniotic_app/css/creative.css/creative.min.css" media="screen" title="no title"  charset="utf-8">
 
-    <script src="/static/js/creative.js/creative.min.js"></script>
-    <script src="../../static/Amniotic_app/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="../../static/Amniotic_app/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
+    <script src="static/Amniotic_app/js/creative.js/creative.min.js"></script>
+    <script src="static/Amniotic_app/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="static/Amniotic_app/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="../../static/Amniotic_app/js/creative.min.js"></script>
+    <script src="static/Amniotic_app/js/creative.min.js"></script>
+
 
 </body>
 
